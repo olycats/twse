@@ -1,7 +1,7 @@
 # twse
 download data from TWSE(臺灣證券交易所)
 
-用Python寫的一支小程式，
+用Python寫的小程式，
 由台灣證券交易所的網站，下載特定的資料。
 下載的範圍為自行指定的日期區間。
 
@@ -41,10 +41,16 @@ download data from TWSE(臺灣證券交易所)
     pip3 install --upgrade pip
     ```
 
+* pandas套件
+    ```
+    sudo pip3 install pandas
+    ```
+
 
 ## Code structure
 ```
 twse
+├── all_data
 ├── FMTQIK
 ├── MI_5MINS
 └── MI_5MINS_INDEX
@@ -53,12 +59,14 @@ twse
 File/Folder          |	Description
  --------------------| ------------------------------------------------ 
 .gitignore           | gitignore
+all_data	     | 清理、合併後的資料
 FMTQIK               | 檔案下載的存取目錄（每日市場成交資訊）
-MI_5MINS	           | 檔案下載的存取目錄（每5秒委託成交統計）
+MI_5MINS	     | 檔案下載的存取目錄（每5秒委託成交統計）
 MI_5MINS_INDEX       | 檔案下載的存取目錄（每5秒指數盤後統計TWSE）
 screenshots          | README.md使用的截圖
 README.md            | README
 download_csv.py      | 下載檔案的程式碼
+pre_data.py	     | 初步處理下載的csv資料（清理、合併），並存至 all data
 
 ## 日期設定
 ```
