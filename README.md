@@ -59,14 +59,14 @@ twse
 File/Folder          |	Description
  --------------------| ------------------------------------------------ 
 .gitignore           | gitignore
-all_data	     | 清理、合併後的資料
+all_data	     | 整理後的資料
 FMTQIK               | 檔案下載的存取目錄（每日市場成交資訊）
 MI_5MINS	     | 檔案下載的存取目錄（每5秒委託成交統計）
 MI_5MINS_INDEX       | 檔案下載的存取目錄（每5秒指數盤後統計TWSE）
 screenshots          | README.md使用的截圖
 README.md            | README
 download_csv.py      | 下載檔案的程式碼
-pre_data.py	     | 初步處理下載的csv資料（清理、合併），並存至 all data
+pre_data.py	     | 整理下載的csv資料，並存至 all data
 
 ## 日期設定
 ```
